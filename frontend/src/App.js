@@ -9,6 +9,10 @@ function App() {
         <h1>SkillForge</h1>
         <p>Learning & Assessment Platform</p>
         <p>hello from chinmay</p>
+        <p>hello from chinmay1</p>
+        <p>hello from chinmay2</p>
+
+
       </header>
       <main>
         <Routes>
