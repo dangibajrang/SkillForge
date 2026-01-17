@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <h1>SkillForge</h1>
         <p>Learning & Assessment Platform</p>
+        <>hello SkillForge</>
       </header>
       <main>
         <Routes>
