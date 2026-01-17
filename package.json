@@ -1,0 +1,40 @@
+{
+  "name": "skillforge",
+  "version": "1.0.0",
+  "description": "Learning & Assessment Platform - Microservices Architecture",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "gateway",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:auth": "cd services/auth-service && npm run dev",
+    "dev:user": "cd services/user-service && npm run dev",
+    "dev:course": "cd services/course-service && npm run dev",
+    "dev:assessment": "cd services/assessment-service && npm run dev",
+    "dev:media": "cd services/media-service && npm run dev",
+    "dev:notification": "cd services/notification-service && npm run dev",
+    "dev:gateway": "cd gateway && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm install && npm run install:services && npm run install:gateway && npm run install:frontend",
+    "install:services": "cd services/auth-service && npm install && cd ../user-service && npm install && cd ../course-service && npm install && cd ../assessment-service && npm install && cd ../media-service && npm install && cd ../notification-service && npm install",
+    "install:gateway": "cd gateway && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "keywords": [
+    "microservices",
+    "learning-platform",
+    "nodejs",
+    "react",
+    "mongodb",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
